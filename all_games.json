@@ -1,0 +1,302 @@
+[
+  {
+    "id": "pc-04",
+    "title": "GTA V Enhanced",
+    "slug": "gta-v-enhanced",
+    "seed": "gta-v"
+  },
+  {
+    "id": "pc-01",
+    "title": "Cyberpunk 2077",
+    "slug": "cyberpunk-2077",
+    "seed": "cyberpunk-2077"
+  },
+  {
+    "id": "pc-02",
+    "title": "Red Dead Redemption 2",
+    "slug": "red-dead-redemption-2",
+    "seed": "red-dead-redemption-2"
+  },
+  {
+    "id": "pc-05",
+    "title": "Elden Ring",
+    "slug": "elden-ring",
+    "seed": "elden-ring"
+  },
+  {
+    "id": "pc-03",
+    "title": "Hogwarts Legacy",
+    "slug": "hogwarts-legacy",
+    "seed": "hogwarts-legacy"
+  },
+  {
+    "id": "pc-07",
+    "title": "Black Myth: Wukong",
+    "slug": "black-myth-wukong",
+    "seed": "black-myth-wukong"
+  },
+  {
+    "id": "pc-06",
+    "title": "Baldur",
+    "slug": "baldurs-gate-3",
+    "seed": "baldurs-gate-3"
+  },
+  {
+    "id": "pc-08",
+    "title": "Forza Horizon 5",
+    "slug": "forza-horizon-5",
+    "seed": "forza-horizon-5"
+  },
+  {
+    "id": "pc-09",
+    "title": "EA Sports FC 26",
+    "slug": "ea-sports-fc-26",
+    "seed": "ea-sports-fc-26"
+  },
+  {
+    "id": "pc-10",
+    "title": "Assassin",
+    "slug": "assassins-creed-shadows",
+    "seed": "assassins-creed-shadows"
+  },
+  {
+    "id": "pc-11",
+    "title": "Call of Duty: Black Ops 7",
+    "slug": "call-of-duty-black-ops-7",
+    "seed": "call-of-duty-black-ops-7"
+  },
+  {
+    "id": "pc-12",
+    "title": "Resident Evil 4",
+    "slug": "resident-evil-4",
+    "seed": "resident-evil-4"
+  },
+  {
+    "id": "pc-13",
+    "title": "God of War Ragnar\u00f6k",
+    "slug": "god-of-war-ragnarok-pc",
+    "seed": "god-of-war-ragnarok"
+  },
+  {
+    "id": "pc-14",
+    "title": "The Last of Us Part I",
+    "slug": "the-last-of-us-part-i",
+    "seed": "the-last-of-us-part-i"
+  },
+  {
+    "id": "pc-15",
+    "title": "Minecraft Java & Bedrock",
+    "slug": "minecraft-java-bedrock",
+    "seed": "minecraft"
+  },
+  {
+    "id": "ps-01",
+    "title": "God of War Ragnar\u00f6k",
+    "slug": "god-of-war-ragnarok-ps5",
+    "seed": "god-of-war-ragnarok"
+  },
+  {
+    "id": "ps-02",
+    "title": "Spider-Man 2",
+    "slug": "spider-man-2-ps5",
+    "seed": "spider-man-2"
+  },
+  {
+    "id": "ps-03",
+    "title": "Ghost of Tsushima",
+    "slug": "ghost-of-tsushima-ps5",
+    "seed": "ghost-of-tsushima"
+  },
+  {
+    "id": "ps-04",
+    "title": "Horizon Forbidden West",
+    "slug": "horizon-forbidden-west-ps5",
+    "seed": "horizon-forbidden-west"
+  },
+  {
+    "id": "ps-05",
+    "title": "Stellar Blade",
+    "slug": "stellar-blade-ps5",
+    "seed": "stellar-blade"
+  },
+  {
+    "id": "ps-06",
+    "title": "Demon",
+    "slug": "demons-souls-ps5",
+    "seed": "demons-souls"
+  },
+  {
+    "id": "ps-07",
+    "title": "Astro Bot",
+    "slug": "astro-bot-ps5",
+    "seed": "astro-bot"
+  },
+  {
+    "id": "ps-08",
+    "title": "The Last of Us Part II Remastered",
+    "slug": "the-last-of-us-part-ii-remastered-ps5",
+    "seed": "the-last-of-us-part-ii"
+  },
+  {
+    "id": "ps-09",
+    "title": "Death Stranding 2",
+    "slug": "death-stranding-2-ps5",
+    "seed": "death-stranding-2"
+  },
+  {
+    "id": "ps-10",
+    "title": "Gran Turismo 7",
+    "slug": "gran-turismo-7-ps5",
+    "seed": "gran-turismo-7"
+  },
+  {
+    "id": "xb-01",
+    "title": "GTA V",
+    "slug": "gta-v-xbox",
+    "seed": "gta-v"
+  },
+  {
+    "id": "xb-02",
+    "title": "Forza Horizon 5",
+    "slug": "forza-horizon-5-xbox",
+    "seed": "forza-horizon-5"
+  },
+  {
+    "id": "xb-03",
+    "title": "Minecraft",
+    "slug": "minecraft-xbox",
+    "seed": "minecraft"
+  },
+  {
+    "id": "xb-04",
+    "title": "Halo Infinite",
+    "slug": "halo-infinite-xbox",
+    "seed": "halo-infinite"
+  },
+  {
+    "id": "xb-05",
+    "title": "Cyberpunk 2077",
+    "slug": "cyberpunk-2077-xbox",
+    "seed": "cyberpunk-2077"
+  },
+  {
+    "id": "xb-06",
+    "title": "Hogwarts Legacy",
+    "slug": "hogwarts-legacy-xbox",
+    "seed": "hogwarts-legacy"
+  },
+  {
+    "id": "xb-07",
+    "title": "EA Sports FC 26",
+    "slug": "ea-sports-fc-26-xbox",
+    "seed": "ea-sports-fc-26"
+  },
+  {
+    "id": "xb-08",
+    "title": "NBA 2K26",
+    "slug": "nba-2k26-xbox",
+    "seed": "nba-2k26"
+  },
+  {
+    "id": "xb-09",
+    "title": "Assassin",
+    "slug": "assassins-creed-shadows-xbox",
+    "seed": "assassins-creed-shadows"
+  },
+  {
+    "id": "xb-10",
+    "title": "Mortal Kombat 1",
+    "slug": "mortal-kombat-1-xbox",
+    "seed": "mortal-kombat-1"
+  },
+  {
+    "id": "pre-01",
+    "title": "Grand Theft Auto VI",
+    "slug": "grand-theft-auto-vi",
+    "seed": "gta-vi"
+  },
+  {
+    "id": "pre-02",
+    "title": "Forza Horizon 6",
+    "slug": "forza-horizon-6",
+    "seed": "forza-horizon-6"
+  },
+  {
+    "id": "pre-03",
+    "title": "Marvel",
+    "slug": "marvels-wolverine",
+    "seed": "marvels-wolverine"
+  },
+  {
+    "id": "pre-04",
+    "title": "Call of Duty: Modern Warfare 4",
+    "slug": "call-of-duty-modern-warfare-4",
+    "seed": "cod-modern-warfare-4"
+  },
+  {
+    "id": "pre-05",
+    "title": "007 First Light",
+    "slug": "007-first-light",
+    "seed": "007-first-light"
+  },
+  {
+    "id": "pre-06",
+    "title": "ACE COMBAT 8: WINGS OF THEVE",
+    "slug": "ace-combat-8-wings-of-theve",
+    "seed": "ace-combat-8"
+  },
+  {
+    "id": "pre-07",
+    "title": "Star Wars: Galactic Racer",
+    "slug": "star-wars-galactic-racer",
+    "seed": "star-wars-galactic-racer"
+  },
+  {
+    "id": "pre-08",
+    "title": "Star Wars Zero Company",
+    "slug": "star-wars-zero-company",
+    "seed": "star-wars-zero-company"
+  },
+  {
+    "id": "pre-09",
+    "title": "EA Sports FC 27",
+    "slug": "ea-sports-fc-27",
+    "seed": "ea-sports-fc-27"
+  },
+  {
+    "id": "pre-10",
+    "title": "The Blood of Dawnwalker",
+    "slug": "the-blood-of-dawnwalker",
+    "seed": "the-blood-of-dawnwalker"
+  },
+  {
+    "id": "pre-11",
+    "title": "Marvel T\u014dkon: Fighting Souls",
+    "slug": "marvel-tokon-fighting-souls",
+    "seed": "marvel-tokon"
+  },
+  {
+    "id": "d01",
+    "title": "Cyberpunk 2077: Phantom Liberty",
+    "slug": "cyberpunk-2077-phantom-liberty",
+    "seed": "cyberpunk-phantom-liberty"
+  },
+  {
+    "id": "d02",
+    "title": "Elden Ring: Shadow of the Erdtree",
+    "slug": "elden-ring-shadow-of-the-erdtree",
+    "seed": "elden-ring-erdtree"
+  },
+  {
+    "id": "d03",
+    "title": "KDex Gift Card \u20b91,000",
+    "slug": "kdex-gift-card-1000",
+    "seed": "kdex-gift-card-1000"
+  },
+  {
+    "id": "d04",
+    "title": "KDex Play+ \u2014 3 Months",
+    "slug": "kdex-play-3-months",
+    "seed": "kdex-play-3-months"
+  }
+]

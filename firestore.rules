@@ -1,0 +1,103 @@
+rules_version = '2';
+
+/**
+ * NEXORA GAMES — Firestore security rules (reference implementation for production).
+ *
+ * These rules are NOT applied in demo mode (no Firebase project is configured yet).
+ * Once Firebase is configured, deploy with:  firebase deploy --only firestore:rules
+ *
+ * Key principles
+ *  - Clients can never read `digitalKeys` or write anything money/entitlement related.
+ *  - Orders are written by Cloud Functions only (Admin SDK bypasses rules), and are
+ *    read-only for the owning user.
+ *  - Admin/manager/support access is granted exclusively through custom claims that are
+ *    set server-side (never by the client), so hiding admin nav in the SPA is cosmetic.
+ */
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    function isStaff() {
+      return isSignedIn() && (
+        request.auth.token.admin == true ||
+        request.auth.token.manager == true ||
+        request.auth.token.support == true
+      );
+    }
+
+    function owns(resource) {
+      return isSignedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    // ---------- Catalog: public read, staff write ----------
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /deals/{dealId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /coupons/{couponId} {
+      // Readable so the cart can validate a code; never writable by clients.
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /articles/{articleId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ---------- Reviews: public read, owner write (moderation fields staff-only) ----------
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if owns(resource) || isAdmin();
+    }
+
+    // ---------- Users: owner-only profile, no role escalation ----------
+    match /users/{userId} {
+      allow read: if isSignedIn() && (request.auth.uid == userId || isStaff());
+      allow create: if isSignedIn()
+                    && request.auth.uid == userId
+                    && request.resource.data.role == null;   // roles come from claims
+      allow update: if isSignedIn() && request.auth.uid == userId
+                    && request.resource.data.role == resource.data.role
+                    && request.resource.data.email == resource.data.email;
+      allow delete: if isAdmin();
+    }
+
+    // ---------- Orders: functions create, owner reads ----------
+    match /orders/{orderId} {
+      allow read: if owns(resource) || isStaff();
+      allow create, update, delete: if false;   // Cloud Functions only
+    }
+
+    // ---------- Digital keys: NEVER client readable ----------
+    match /digitalKeys/{keyId} {
+      allow read, write: if false;              // Admin SDK (Functions) only
+    }
+
+    // ---------- Support tickets: owner + staff ----------
+    match /tickets/{ticketId} {
+      allow read: if owns(resource) || isStaff();
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update: if isStaff();               // status / reply updates
+      allow delete: if isAdmin();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
